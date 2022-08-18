@@ -1,0 +1,60 @@
+.nav {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	right: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+}
+
+.nav__logo {
+	font-family: 'Chronicle Display';
+	font-weight: 800;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+.nav__links {
+	font-size: 18px;
+	font-weight: 500;
+
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.nav__link {
+	display: inline-block;
+	color: #fff;
+	margin: 0px 40px 0px 0px;
+
+	&:last-child{
+		margin: 0;
+	}
+}
+
+.nav__account {
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.account__icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px 0px 0px;
+	img {
+		vertical-align: middle;
+	}
+}
+
+.account__link {
+	display: inline-block;
+	vertical-align: bottom;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+}
